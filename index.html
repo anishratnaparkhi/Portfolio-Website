@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="style.css"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <h1 class="text-xl font-bold">Anish Portfolio</h1>
+      </div>
+      <nav class="space-x-6 font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#achievements" class="hover:text-blue-600">Achievements</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-50 to-purple-100">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Anish 👋</h2>
+    <p class="text-lg max-w-xl mx-auto">Aspiring Web Developer | Creative Thinker | Problem Solver</p>
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Avatar"
+      class="mx-auto mt-8 rounded-full w-36 h-36 border-4 border-blue-300">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto py-16 px-4">
+    <h3 class="text-2xl font-bold mb-4">👨‍💻 About Me</h3>
+    <p class="text-gray-700 leading-relaxed">
+      I'm a passionate developer who enjoys building creative web experiences. I love solving problems, exploring new
+      technologies, and bringing ideas to life with code.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl font-bold mb-8">🚀 Projects</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1 -->
+        <a href="https://yourproject1link.com" target="_blank"
+          class="block bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl hover:scale-[1.02] transition">
+          <h4 class="text-xl font-semibold mb-2">Project 1</h4>
+          <p class="text-gray-600">A web app that does amazing things.</p>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://yourproject2link.com" target="_blank"
+          class="block bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl hover:scale-[1.02] transition">
+          <h4 class="text-xl font-semibold mb-2">Project 2</h4>
+          <p class="text-gray-600">Another cool tool I built for fun or learning.</p>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://yourproject3link.com" target="_blank"
+          class="block bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl hover:scale-[1.02] transition">
+          <h4 class="text-xl font-semibold mb-2">Project 3</h4>
+          <p class="text-gray-600">This one solves real-world problems efficiently.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="max-w-4xl mx-auto py-16 px-4">
+    <h3 class="text-2xl font-bold mb-4">🏆 Achievements</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700">
+      <li>Unlocked 50 days badge on leetcode</li>
+      <li>Top 10 in Codeforces contest</li>
+      <li>Published a web extension with 10k+ users</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-50 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">📬 Contact Me</h3>
+      <p class="mb-6">Feel free to reach out through email or social links below.</p>
+      <p>Email: <a href="mailto:you@example.com" class="text-blue-600 underline">anishratnaparkhi1@gmail.com</a></p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="text-xl hover:text-blue-500">🔗 LinkedIn</a>
+        <a href="#" class="text-xl hover:text-blue-500">💻 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-200">
+    <p>© 2025 Anish | Built with ❤️ using HTML & Tailwind CSS</p>
+  </footer>
+
+  <!-- JavaScript for Theme Toggle -->
+  <script>
+    function toggleTheme(button) {
+      const iframe = button.closest(".transition").querySelector("iframe");
+      const currentSrc = iframe.src;
+      const theme = currentSrc.includes("theme=dark") ? "light" : "dark";
+      iframe.src = currentSrc.replace(/theme=(light|dark)/, `theme=${theme}`);
+    }
+  </script>
+
+</body>
+
+</html>
